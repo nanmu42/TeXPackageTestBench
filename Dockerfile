@@ -3,6 +3,7 @@ FROM ubuntu:xenial
 LABEL Description="Package testbench for LaTeX and friends, based on MiKTeX by Christian Schenk, Ubuntu 16.04" Vendor="nanmu42" Version="0.5.0"
 
 # Install MiKTeX
+RUN apt-get install apt-transport-https
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
 RUN echo "deb http://miktex.org/download/ubuntu xenial universe" | tee /etc/apt/sources.list.d/miktex.list
 RUN apt-get update
