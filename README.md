@@ -1,3 +1,7 @@
+# Important
+
+**Out of maintain, please refer to https://github.com/nanmu42/miktex-docker**
+
 # What's this?
 
 This is a docker image of MiKTeX Ubuntu distribution, with GNU make, latexmk, amsfont, and fandol.
